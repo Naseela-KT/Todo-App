@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const Button = () => {
+export const Button = (props) => {
     return (
         <div>
-            <Button>Click Here</Button>
+            <Button className="button">{props.BtnName}</Button>
         </div>
     );
 }
