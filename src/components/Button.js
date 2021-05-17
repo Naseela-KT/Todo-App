@@ -5,5 +5,5 @@ export const Button = () => {
         <div>
             <Button>Click Here</Button>
         </div>
-    )
+    );
 }
