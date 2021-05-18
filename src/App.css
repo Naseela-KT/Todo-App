@@ -18,4 +18,15 @@
 h1{
   font-size: 1.5rem;
 }
+.formControl{
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+}
+input,input:focus{
+  width: 80%;
+  padding: 10px;
+  border-radius: 5%;
+  border:none;
+}
 
