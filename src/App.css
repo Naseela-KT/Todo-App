@@ -24,9 +24,19 @@ h1{
   justify-content: space-around;
 }
 input,input:focus{
-  width: 80%;
+  width: 70%;
   padding: 10px;
-  border-radius: 5%;
+  border-radius: 3%;
   border:none;
 }
-
+button{
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin: 0 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: blue;
+  border: 2px solid blue;
+  color: white;
+}
