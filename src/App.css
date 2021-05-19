@@ -30,7 +30,7 @@ input,input:focus{
   border:none;
 }
 button{
-  padding: 5px 15px;
+  padding: 5px 8px;
   border-radius: 5px;
   margin: 0 5px;
   font-size: 1rem;
@@ -59,7 +59,7 @@ button{
 }
 .listTitle{
   flex: 1;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   color:darkred;
 }
