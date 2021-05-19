@@ -40,3 +40,19 @@ button{
   border: 2px solid blue;
   color: white;
 }
+.listControl{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.listItem{
+  display: flex;
+  align-items: center;
+  width: 300px;
+  padding: 5px 15px;
+  margin: 10px 0;
+  background-color: teal;
+  border: 2px solid teal;
+  border-radius: 3%;
+  color: white;
+}
