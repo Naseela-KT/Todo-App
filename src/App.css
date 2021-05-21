@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:darkslategrey;
+  background-color:indigo;
   color: black;
 }
 .container{
@@ -36,8 +36,8 @@ button{
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  background-color: blue;
-  border: 2px solid blue;
+  background-color:mediumvioletred;
+  border: 2px solid mediumvioletred;
   color: white;
 }
 .listControl{
