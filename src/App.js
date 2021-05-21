@@ -6,19 +6,24 @@ import {useState} from 'react';
 function App() {
   const [todo, setTodo] = useState('');
   const [todos, setTodos] = useState([]);
+
   const submitHandler=(e)=>{
     e.preventDefault();
-    if(todo!==''){
+    if(todo!=''){
       setTodos([{id:'${todo}--${Date.now()}',todo},...todos]);
     }
   };
+  const deleteHandler=()=>{
+
+  };
+
 return (
   <div className="App">
    <div className="container">
     <h1>Todo List Application</h1>
     <TodoForm submitHandler={submitHandler}
      todo={todo} setTodo={setTodo}/>
-    <TodoList todos={todos}/>
+    <TodoList todos={todos} deleteHandler={deleteHandler}/>
    </div>
   </div>
   );
