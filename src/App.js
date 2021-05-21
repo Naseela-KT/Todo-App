@@ -16,7 +16,7 @@ function App() {
   };
   const deleteHandler=(id)=>{
      const deletedTodo=todos.filter((t)=>t.id!==id);
-     setTodos(...deletedTodo);
+     setTodos([...deletedTodo]);
   };
 
 return (
