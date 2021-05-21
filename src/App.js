@@ -14,8 +14,9 @@ function App() {
       setTodos([{id:'${todo}--${Date.now()}',todo},...todos]);
     }
   };
-  const deleteHandler=()=>{
-
+  const deleteHandler=(id)=>{
+     const deletedTodo=todos.filter((t)=>t.id!==id);
+     setTodos(...deletedTodo);
   };
 
 return (
