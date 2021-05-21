@@ -5,7 +5,7 @@ const TodoForm = ({submitHandler,todo,setTodo}) => {
         <form className='formControl'
         onSubmit={submitHandler}>
             <input type="text" placeholder="Enter Your Todo" value={todo}
-            onChange={(e) => setTodo(e.target.value)/>
+            onChange={(e) => setTodo(e.target.value)}/>
             <button type="submit">Add</button>
         </form>
         
