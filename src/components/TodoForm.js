@@ -1,8 +1,9 @@
 import React from 'react'
 
-const TodoForm = () => {
+const TodoForm = ({submitHandler,todo,setTodo}) => {
     return (
-        <form className='formControl'>
+        <form className='formControl'
+        onSubmit={submitHandler}>
             <input type="text" placeholder="Enter Your Todo"></input>
             <button type="submit">Add</button>
         </form>
