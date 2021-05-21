@@ -4,7 +4,7 @@ import TodoList from './components/TodoList';
 import {useState} from 'react';
 
 function App() {
-  const [todo, setTodo] = useState(initialState)
+  const [todo, setTodo] = useState()
   const submitHandler=(e)=>{
     e.preventDefault();
   };
