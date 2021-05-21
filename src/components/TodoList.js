@@ -1,13 +1,18 @@
 import React from 'react'
 
-const TodoList = () => {
+const TodoList = ({todos}) => {
     return (
         <ul className="listControl">
-            <li className="listItem">
-              <span className="listTitle">Buy Mangoes</span>
-              <button>Edit</button>
-              <button>Delete</button>
-            </li>
+            {
+                todos.map((t)=>(
+                    <li className="listItem" key={t.id}>
+                    <span className="listTitle">{t.todo}</span>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                  </li>
+                ))
+            }
+            
         </ul>
     );
 }

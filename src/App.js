@@ -4,9 +4,13 @@ import TodoList from './components/TodoList';
 import {useState} from 'react';
 
 function App() {
-  const [todo, setTodo] = useState()
+  const [todo, setTodo] = useState('');
+  const [todos, setTodos] = useState([]);
   const submitHandler=(e)=>{
     e.preventDefault();
+    if(todo!==''){
+      setTodos([{id:'${todo}--${Date.now()}',todo},...todos]);
+    }
   };
 return (
   <div className="App">
@@ -14,7 +18,7 @@ return (
     <h1>Todo List Application</h1>
     <TodoForm submitHandler={submitHandler}
      todo={todo} setTodo={setTodo}/>
-    <TodoList />
+    <TodoList todos={todos}/>
    </div>
   </div>
   );
