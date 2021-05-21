@@ -9,7 +9,7 @@ function App() {
 
   const submitHandler=(e)=>{
     e.preventDefault();
-    if(todo!=''){
+    if(todo!==''){
       setTodos([{id:'${todo}--${Date.now()}',todo},...todos]);
     }
   };
