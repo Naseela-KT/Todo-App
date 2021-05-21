@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TodoList = ({todos}) => {
+const TodoList = ({todos,deleteHandler}) => {
     return (
         <ul className="listControl">
             {
