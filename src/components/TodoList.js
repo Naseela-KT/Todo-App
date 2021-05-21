@@ -8,7 +8,7 @@ const TodoList = ({todos,deleteHandler}) => {
                     <li className="listItem" key={t.id}>
                     <span className="listTitle">{t.todo}</span>
                     <button>Edit</button>
-                    <button onClick={(id)=>deleteHandler(t.id)}>Delete</button>
+                    <button onClick={() => deleteHandler(t.id)}>Delete</button>
                   </li>
                 ))
             }
