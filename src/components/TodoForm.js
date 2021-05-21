@@ -12,4 +12,4 @@ const TodoForm = ({submitHandler,todo,setTodo}) => {
     );
 }
 
-export default TodoForm
+export default TodoForm;

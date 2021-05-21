@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TodoList = ({ todos , deleteHandler }) => {
+const TodoList = ({ todos, deleteHandler }) => {
     return (
         <ul className="listControl">
             {
@@ -17,4 +17,4 @@ const TodoList = ({ todos , deleteHandler }) => {
     );
 }
 
-export default TodoList
+export default TodoList;
