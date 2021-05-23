@@ -19,14 +19,17 @@ function App() {
      const deletedTodo= todos.filter((t) => t.id !== id);
      setTodos([...deletedTodo]);
   };
-
+  const editHandler = (id) => {
+    const editTodo = todos.find((i) => i.id===id);
+    setTodo(editTodo.todo);
+  };
 return (
   <div className="App">
    <div className="container">
     <h1>Todo List Application</h1>
     <TodoForm submitHandler={submitHandler}
      todo={todo} setTodo={setTodo}/>
-    <TodoList todos={todos} deleteHandler={deleteHandler}/>
+    <TodoList todos={todos} deleteHandler={deleteHandler} editHandler={editHandler}/>
    </div>
   </div>
   );
