@@ -6,6 +6,7 @@ import {useState} from 'react';
 function App() {
   const [todo, setTodo] = useState('');
   const [todos, setTodos] = useState([]);
+  const [editId, setEditId] = useState(0);
 
   const submitHandler=(e)=>{
     e.preventDefault();
@@ -22,13 +23,14 @@ function App() {
   const editHandler = (id) => {
     const editTodo = todos.find((i) => i.id===id);
     setTodo(editTodo.todo);
+    setEditId(editTodo.id);
   };
 return (
   <div className="App">
    <div className="container">
     <h1>Todo List Application</h1>
     <TodoForm submitHandler={submitHandler}
-     todo={todo} setTodo={setTodo}/>
+     todo={todo} setTodo={setTodo} editId={editId}/>
     <TodoList todos={todos} deleteHandler={deleteHandler} editHandler={editHandler}/>
    </div>
   </div>
