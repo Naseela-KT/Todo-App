@@ -13,6 +13,7 @@ function App() {
       // eslint-disable-next-line
       setTodos([{id:`${todo}--${Date.now()}`,todo},...todos]);
     }
+    setTodo('');
   };
   const deleteHandler = (id) => {
      const deletedTodo= todos.filter((t) => t.id !== id);
