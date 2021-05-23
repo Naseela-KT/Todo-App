@@ -11,7 +11,7 @@ function App() {
     e.preventDefault();
     if(todo!==''){
       // eslint-disable-next-line
-      setTodos([{id:'${todo}--${Date.now()}',todo},...todos]);
+      setTodos([{id:`${todo}--${Date.now()}`,todo},...todos]);
     }
   };
   const deleteHandler = (id) => {
