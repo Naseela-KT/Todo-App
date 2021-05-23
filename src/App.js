@@ -13,7 +13,7 @@ function App() {
       // eslint-disable-next-line
       setTodos([{id:`${todo}--${Date.now()}`,todo},...todos]);
     }
-    setTodo('');
+    setTodo('');//To make the field empty after adding
   };
   const deleteHandler = (id) => {
      const deletedTodo= todos.filter((t) => t.id !== id);
